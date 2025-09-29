@@ -1,0 +1,5 @@
+node_modules/
+build/
+
+.clasp.json.dev
+.clasp.json.prod
