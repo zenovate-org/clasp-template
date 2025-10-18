@@ -21,7 +21,7 @@ add your scriptId
 
 change appscript.json you want
 
-- Time Zone（default: "Asia/Tokyo"）
+- Time Zone（default: "Asia/Ho_Chi_Minh"）
 - OAuth
 
 ### npm
