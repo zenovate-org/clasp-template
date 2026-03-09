@@ -1,6 +1,6 @@
-# Sourcing backend
+# Clasp Typescript Template
 
-The sourcing backend using Google Apps Script and Google Sheets.
+Environment for Google App Script with Typescript, ESLint, Prettier and other npm packages
 
 ## Usage
 
