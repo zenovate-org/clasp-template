@@ -1,5 +1,9 @@
 node_modules/
 build/
+appsscript.json
 
 .clasp.json.dev
 .clasp.json.prod
+
+.vscode/
+.idea/

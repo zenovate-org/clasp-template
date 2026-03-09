@@ -1,14 +1,18 @@
-# Clasp Typescript Template
+# Sourcing backend
 
-Environment for Google App Script with Typescript, ESLint, Prettier and other npm packages
+The sourcing backend using Google Apps Script and Google Sheets.
 
 ## Usage
 
 ### Clasp
 
-**.clasp.json.dev**
+Login to your Google account
 
-add your scriptId
+```bash
+yarn clasp login
+```
+
+Set up your script ID in:
 
 - **Dev Environment:** `.clasp.json.dev`
 - **Prod Environment:** `.clasp.json.prod`
@@ -19,6 +23,10 @@ add your scriptId
 
 **appscript.json**
 
+```bash
+cp appscript.json.example appscript.json
+```
+
 change appscript.json you want
 
 - Time Zone（default: "Asia/Ho_Chi_Minh"）
@@ -28,19 +36,25 @@ change appscript.json you want
 
 install packages
 
-```
-npm install
+```bash
+yarn install
 ```
 
-linter
+linter & formatter
 
-```
-npm run lint
+```bash
+yarn lint
+yarn format
 ```
 
 deploy
 
+```bash
+yarn deploy:dev
 ```
-npm run deploy:dev
-npm run deploy:prod
+
+Manual deploy:
+
+```bash
+yarn build && yarn obfu && clasp push --project .clasp.json.dev
 ```
